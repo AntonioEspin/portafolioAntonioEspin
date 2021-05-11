@@ -30,7 +30,7 @@ main {
   width: 100%;
   max-width: 1300px;
   height: auto;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* Header (start) */
@@ -42,6 +42,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .header__logo {
@@ -72,6 +73,7 @@ main {
   outline: none;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 /* Header (end) */
 
@@ -84,6 +86,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  padding: 0 20px;
 }
 
 .hero__img {
@@ -100,10 +103,11 @@ main {
   width: 100%;
   height: auto;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .hero__info h1 {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: var(--white-color);
   margin-bottom: 15px;
 }
@@ -114,3 +118,143 @@ main {
   margin-bottom: 25px;
 }
 /* Hero Section (end) */
+
+/* Project Section (start) */
+.project {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 100%;
+  height: auto;
+  background-color: var(--white-color);
+}
+
+.project__info {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.project__info h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.project__info p {
+  font-size: 2rem;
+  margin-top: 25px;
+}
+
+.projects__items {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.projects__items--box {
+  display: grid;
+  grid-template-rows: 150px 100px auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.itemArticle {
+  grid-row: 2 / 4;
+  width: 95%;
+  max-width: 625px;
+  background-color: var(--black-color);
+  padding: 0 20px;
+}
+
+.itemArticle h3 {
+  font-size: 2.4rem;
+  font-family: var(--nunito);
+  color: var(--white-color);
+  margin-top: 30px;
+}
+
+.itemArticle p {
+  font-size: 2rem;
+  color: var(--gray-color);
+  margin-top: 15px;
+}
+
+.itemArticle__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.itemArticle__buttons--one {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--orangeLight-color);
+
+  background-color: var(--black-color);
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.itemArticle__buttons--one a {
+  color: var(--orangeLight-color);
+  font-family: var(--nunito);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.itemArticle__buttons--two {
+  width: 100%;
+  height: 50px;
+  border: none;
+
+  background-color: var(--orangeLight-color);
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.itemArticle__buttons--two a {
+  color: var(--white-color);
+  font-family: var(--nunito);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.project__button {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.project__button button {
+  width: 100%;
+  height: 65px;
+  border: 2px solid var(--black-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+
+.project__button button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: var(--nunito);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.project__button button a img {
+  margin-left: 10px;
+}
+/* Project Section (end) */
