@@ -25,6 +25,7 @@ html {
 }
 
 main {
+  position: relative;
   display: grid;
   grid-template-rows: repeat(5, auto);
   width: 100%;
@@ -59,9 +60,42 @@ main {
   font-size: 1.6rem;
 }
 
+/* Navbar Mobile (start) */
 .header__navbar {
   display: none;
 }
+
+.header__navbarMobile {
+  display: block;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black-color);
+}
+
+.header__navbar--list {
+  width: 100%;
+  height: auto;
+}
+
+.header__navbar--list li {
+  list-style: none;
+}
+
+.header__navbar--list li a {
+  font-size: 3.2rem;
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.header__navbar--list li a p {
+  margin-bottom: 30px;
+}
+.header__navbar--list li a p:hover {
+  color: var(--orangeLight-color);
+}
+/* Navbar Mobile (end) */
 
 .header__button {
   width: 130px;
@@ -109,6 +143,7 @@ main {
 .hero__info h1 {
   font-size: 3.2rem;
   color: var(--white-color);
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 

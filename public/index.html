@@ -16,26 +16,23 @@
     <!-- Header (start) -->
     <header class="header">
       <div class="header__logo">
-        <img src="../src/static/icon-menu.svg" alt="icon-menu">
+        <img id="iconImage" src="../src/static/icon-menu.svg" alt="icon-menu">
         <h2>AE</h2>
       </div>
-      <nav class="header__navbar">
+      <nav id="navBar" class="header__navbar">
         <ul class="header__navbar--list">
           <li>
-            <a href="/#"><p>Hola</p></a>
+            <a href="#presentation"><p>Hola</p></a>
           </li>
           <li>
-            <a href="/#"><p>Proyectos</p></a>
+            <a href="#projects"><p>Proyectos</p></a>
           </li>
           <li>
-            <a href="/#"><p>Testimonios</p></a>
-          </li>
-          <li>
-            <a href="/#"><p>Contacto</p></a>
+            <a href="#contact"><p>Contacto</p></a>
           </li>
         </ul>
       </nav>
-      <button class="header__button">Currículum</button>
+      <button id="headerButton" class="header__button">Currículum</button>
     </header>
     <!-- Header (end) -->
 
@@ -45,7 +42,7 @@
         <img src="../src/static/perfil.jpg" alt="photograph">
       </figure>
       <div class="hero__info">
-        <h1>¡Hola a todos! <br>
+        <h1 id="presentation">¡Hola a todos! <br>
         Soy Antonio Espin</h1>
         <p>
           Developer que le encanta implementar diseños que
@@ -57,7 +54,7 @@
     <!-- Hero Section (end) -->
 
     <!-- Project Section (start) -->
-    <section class="project">
+    <section id="projects" class="project">
       <div class="project__info">
         <h2>Parece magia, funciona con código.</h2>
         <p>A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles.</p>
@@ -115,7 +112,7 @@
     <!-- Project Section (end) -->
 
     <!-- Contact Section (start) -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <section class="contact__container">
         <div class="contact__container--info">
           <h2>Contacto</h2>
@@ -144,5 +141,6 @@
     </footer>
     <!-- Footer (end) -->
   </main>
+  <script src="../src/index.js"></script>
 </body>
 </html>
