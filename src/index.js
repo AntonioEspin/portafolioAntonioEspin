@@ -2,6 +2,7 @@ const iconImage = document.getElementById('iconImage');
 const navBar = document.getElementById('navBar');
 const headerButton = document.getElementById('headerButton');
 
+// Evento para icon-menu de la version mobile
 iconImage.addEventListener('click', ()=> {
   const getSrc = iconImage.getAttribute('src');
   if(getSrc === "../src/static/icon-menu.svg"){
